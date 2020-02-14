@@ -6,7 +6,9 @@
 
 线性回归;softmax;mlp
 
-线性回归:
+##### 线性回归
+
+**过程**:
 
 1. 读取数据集 建立dataloader
 2. 定义模型 
@@ -18,5 +20,11 @@ init.constant_(net[0].bias, val=0.0)  # or you can use `net[0].bias.data.fill_(0
 ```
 
 4. 定义损失函数  优化函数
+
 5. 训练
+
+**Tips:**
+
+* pytorch 中loss和optimizer是累加的  loss_func 是得到sum()值 https://www.zhihu.com/question/303070254
+* 
 
